@@ -13,7 +13,7 @@ class Be extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {tips: [], owns: [], pageSize: 2, links: {}};
+		this.state = {tips: [], owns: [], pageSize: 9, links: {}};
 		this.updatePageSize = this.updatePageSize.bind(this);
 		this.onCreate = this.onCreate.bind(this);
 		this.onUpdate = this.onUpdate.bind(this);
@@ -180,13 +180,13 @@ class CreateDialog extends React.Component {
 		);
 		return (
 			<div>
-				<a href="#createTip">Crack</a>
+				<a href="#createTip">Create</a>
 
 				<div id="createTip" className="modalDialog">
 					<div>
 						<a href="#" title="Close" className="close">X</a>
 
-						<h2>Create new Fiscal</h2>
+						<h2>New</h2>
 
 						<form>
 							{inputs}
@@ -318,8 +318,12 @@ class TipList extends React.Component {
 				<table>
 					<tbody>
 						<tr>
-							<th>Return on Investment</th>
-							<th>Equity</th>
+							<th>Serv:ce</th>
+							<th>Amount</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Address</th>
+							<th>Cell Phone</th>
 							
 						</tr>
 						{tips}
@@ -347,8 +351,12 @@ class Tip extends React.Component {
 	render() {
 		return (
 			<tr>
-				<td>£ {this.props.tip.entity.bounty * 5}</td>
-				<td>£ {this.props.tip.entity.bounty * 1.25}</td>
+				<td> {this.props.tip.entity.serv}</td>
+				<td> ₦ {this.props.tip.entity.servNumber}</td>
+				<td> {this.props.tip.entity.firstName}</td>
+				<td> {this.props.tip.entity.lastName}</td>
+				<td> {this.props.tip.entity.address}</td>
+				<td> {this.props.tip.entity.f1}</td>
 				<td>
 					<UpdateDialog tip={this.props.tip}
 								  owns={this.props.owns}
