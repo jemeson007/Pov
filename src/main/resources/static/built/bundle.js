@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/js/be.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -34458,7 +34458,7 @@ var Employee = /*#__PURE__*/function (_React$Component4) {
   return Employee;
 }(React.Component);
 
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('react'));
+ReactDOM.render( /*#__PURE__*/React.createElement(Be, null), document.getElementById('reach'));
 
 /***/ }),
 
