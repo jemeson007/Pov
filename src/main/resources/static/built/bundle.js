@@ -17,8 +17,8 @@
 /******/ 		};
 /******/
 /******/ 		// Execute the module function
-// /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-            modules[moduleId].call(module.exports, module, __webpack_require__);
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+            // modules[moduleId].call(module.exports, module, __webpack_require__);
 /******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
@@ -34459,7 +34459,7 @@ var Employee = /*#__PURE__*/function (_React$Component4) {
   return Employee;
 }(React.Component);
 
-ReactDOM.render( /*#__PURE__*/React.createElement(Be, null), document.getElementById('reach'));
+ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
 
