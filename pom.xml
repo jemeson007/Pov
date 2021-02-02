@@ -60,6 +60,16 @@
 	<build>
 		<plugins>
 			<plugin>
+			  <groupId>com.heroku.sdk</groupId>
+			  <artifactId>heroku-maven-plugin</artifactId>
+			  <configuration>
+			    <buildpacks>
+			      <buildpack>https://github.com/heroku/exec-buildpack</buildpack>
+			      <buildpack>heroku/jvm</buildpack>
+			    </buildpacks>
+			  </configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
